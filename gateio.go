@@ -160,11 +160,11 @@ func get_rates(cur string) {
         mutex.Lock()
         price = data[cur+"_BTCbp"]
         mutex.Unlock()
-        amount = floor(amount*0.999, precision[cur+"_BTC"])
+        amount = floor(amount*0.998, precision[cur+"_BTC"])
         go order(cur+"_BTC", "sell", fmt.Sprintf("%f", amount), fmt.Sprintf("%f", price))
         mutex.Lock()
         price = data["BTC_USDTbp"]
-        amount = floor((amount*0.999)*data[cur+"_BTCbp"], precision["BTC_USDT"])
+        amount = floor((amount*0.998)*data[cur+"_BTCbp"], precision["BTC_USDT"])
         mutex.Unlock()
         go order("BTC_USDT", "sell", fmt.Sprintf("%f", amount), fmt.Sprintf("%f", price))  
         fmt.Println("Time:", time.Now().Sub(t))
@@ -190,13 +190,13 @@ func get_rates(cur string) {
         go order("BTC_USDT", "buy", fmt.Sprintf("%f", amount), fmt.Sprintf("%f", price))
         mutex.Lock()
         price = data[cur+"_BTCap"]
-        amount = floor((amount*0.999)/price, precision[cur+"_BTC"])
+        amount = floor((amount*0.998)/price, precision[cur+"_BTC"])
         mutex.Unlock()
         go order(cur+"_BTC", "buy", fmt.Sprintf("%f", amount), fmt.Sprintf("%f", price))
         mutex.Lock()
         price = data[cur+"_USDTbp"]
         mutex.Unlock()
-        amount = floor(amount*0.999, precision[cur+"_USDT"])
+        amount = floor(amount*0.998, precision[cur+"_USDT"])
         go order(cur+"_USDT", "sell", fmt.Sprintf("%f", amount), fmt.Sprintf("%f", price))
         fmt.Println("Time:", time.Now().Sub(t))
         fmt.Println("USDT ---> BTC --->", cur,"---> USDT", r2-fee, euro_available2)  
