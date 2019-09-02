@@ -9,7 +9,7 @@ Note that the code was not meant to be published - thus it's messy and maybe har
 
 **Use at your own risk. I'm not responsible for any losses and/or  damage caused by this code**
 
-**This code should only be used if you are familiar with go and understand what it is doing - it may be buggy and you could loose you money**
+**This code should only be used if you are familiar with go and understand what it is doing - it may be buggy and you could loose your money**
 
 
 
