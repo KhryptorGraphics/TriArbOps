@@ -16,7 +16,7 @@ Note that the code was not meant to be published - thus it's messy and maybe har
 
 # How it works
 
-The script tracks the prices of each altcoin on the USDT **and**  the BTC market. If it detects a difference, greater than the cumulated trading fee's, it buys the altcoin on the cheaper market and sells on the more expensive. Below both possibilities are visualized:
+The script tracks the prices of each altcoin on the USDT **and**  the BTC market. If it detects a difference, greater than the cumulated trading fees, it buys the altcoin on the cheaper market and sells on the more expensive. Below both possibilities are visualized:
 
 ![Trinangular Arbitrage](https://github.com/georgk10/BinanceTriArb/raw/master/TriArb.PNG)
 
@@ -26,15 +26,15 @@ That said, you're also exposed to the risk of a crash of each of these currencie
 
 Here's a quick example:
 You have 10 USDT, XX ETH (equals to 10 USDT) & YY BTC (equals to 10 USDT).
-Now the script detects an arbitrage opportunity with earning of and sends 3 order (almost concurrently)
-After these trades happened (the order doesn't really make a difference), you'll still have XX ETH and YY BTC, but your 10.01 USDT - WOW it's magic!!!
+Now the script detects an arbitrage opportunity with earning of 0.1% and sends 3 order (almost concurrently).
+After these trades happened, you'll still have XX ETH and YY BTC, but 10.01 USDT - WOW it's magic!!!
         
 ## Why??
 
 Just because...
 
 No just kidding. If you're wondering why I'm publishing this - it's simly because it's not profitable to run. I just couldn't beat the other guys in terms of speed, so I decided to publish the code. Now I'm focusing my work on smaller exchanges, where it's actually possible to make some money without too many expenses. 
-Maybe anyone of you guys can use these scripts to make some money - otherwise the hours I spend on this would be a complete waste of time...
+Maybe anyone of you guys can use these scripts to make some money - otherwise the hours I spent on this would be a complete waste of time...
 
 ## Dependencies
 
