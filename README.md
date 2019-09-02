@@ -24,10 +24,10 @@ Trying to be fast, a goroutine is started for each order. If we would wait each 
 That's why you need to have at least a predefined amount (in USDT) of each currency you plan to trade.
 That said, you're also exposed to the risk of a crash of each of these currencies - choose them wisely.
 
-Here's a quick example:
-You have 10 USDT, XX ETH (equals to 10 USDT) & YY BTC (equals to 10 USDT).
-Now the script detects an arbitrage opportunity with earning of 0.1% and sends 3 order (almost concurrently).
-After these trades happened, you'll still have XX ETH and YY BTC, but 10.01 USDT - WOW it's magic!!!
+Here's a quick example:<br/>
+You have 10 USDT, XX ETH (equals to 10 USDT) & YY BTC (equals to 10 USDT).<br/>
+Now the script detects an arbitrage opportunity with earning of 0.1% and sends 3 order (almost concurrently).<br/>
+After these trades happened, you'll still have XX ETH and YY BTC, but 10.01 USDT - WOW it's magic!!!<br/>
         
 ## Why??
 
@@ -38,24 +38,24 @@ Maybe anyone of you guys can use these scripts to make some money - otherwise th
 
 ## Dependencies
 
-This code depends on (for gates.io)
-[github.com/gorilla/websocket](https://github.com/gorilla/websocket) 
-[github.com/buger/jsonparser](https://github.com/buger/jsonparser)
+This code depends on (for gates.io)<br/>
+[github.com/gorilla/websocket](https://github.com/gorilla/websocket) <br/>
+[github.com/buger/jsonparser](https://github.com/buger/jsonparser)<br/>
 
-And (for binance.com)
-[github.com/adshao/go-binance](https://github.com/adshao/go-binance)
+And (for binance.com)<br/>
+[github.com/adshao/go-binance](https://github.com/adshao/go-binance)<br/>
 
 
-Just type 
->go get github.com/gorilla/websocket
->go get github.com/buger/jsonparser
->go get github.com/adshao/go-binance
+Just type <br/>
+>go get github.com/gorilla/websocket<br/>
+>go get github.com/buger/jsonparser<br/>
+>go get github.com/adshao/go-binance<br/>
 
 ## Setup
 
-1. Download this repo
-2. Install dependencies 
-3. Open the codebase 
+1. Download this repo   
+2. Install dependencies   
+3. Open the codebase   
 4. Read and understand the code!!!
 5. Edit the variables marked with "Custom Variables"
 6. Make sure you have at least "min_amount" usdt of **each** currency you want to trade
